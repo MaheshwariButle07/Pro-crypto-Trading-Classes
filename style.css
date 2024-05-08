@@ -6,7 +6,21 @@
 }
 
 .LG-image{
-    height: 50px;
-    width: 50px;
+    height: 40px;
+    width: 40px;
     margin: 5px 15px;
+}
+
+.img-heading{
+    background-image: url(./images/background-image-1.jpg);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 200px 20px;
+    color: #1b0515;
+    font-weight:bolder;
+   font-size: 30px;
 }
