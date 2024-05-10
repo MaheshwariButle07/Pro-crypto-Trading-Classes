@@ -1,0 +1,89 @@
+function LightMode() {
+    const lightMode = document.getElementById('light-mode');
+    lightMode.classList.add('activate');
+
+    const darkMode = document.getElementById('dark-mode');
+    darkMode.classList.remove('activate');
+
+    const bodyLight = document.getElementById('body');
+    bodyLight.className = 'light-mode';
+
+}
+
+
+function DarkMode() {
+    const lightMode = document.getElementById('light-mode');
+    lightMode.classList.remove('activate');
+
+    const darkMode = document.getElementById('dark-mode');
+    darkMode.classList.add('activate');
+
+    const bodyLight = document.getElementById('body');
+    bodyLight.className = 'dark-mode';
+
+}
+
+function rating(n){
+
+			
+    const r1 = document.getElementById('r1');
+    const r2 = document.getElementById('r2');
+    const r3 = document.getElementById('r3');
+    const r4 = document.getElementById('r4');
+    const r5 = document.getElementById('r5');
+    const rating = document.getElementById('rating');
+    
+
+    for( let i=0; i<n; i++){
+
+    if(n==1){
+        r1.src = './images/star(1).png';
+        r2.src = './images/star.png';
+        r3.src = './images/star.png';
+        r4.src = './images/star.png';
+        r5.src = './images/star.png';
+    }
+
+    
+    
+    else if(n==2){
+        r1.src = './images/star(1).png';
+        r2.src = './images/star(1).png';
+        r3.src = './images/star.png';
+        r4.src = './images/star.png';
+        r5.src = './images/star.png';
+    }
+    
+
+    else if(n==3){
+        r1.src = './images/star(1).png'
+        r2.src = './images/star(1).png'
+        r3.src = './images/star(1).png'
+        r4.src = './images/star.png';
+        r5.src = './images/star.png';
+    }
+
+    else if(n==4){
+
+        r1.src = './images/star(1).png'
+        r2.src = './images/star(1).png'
+        r3.src = './images/star(1).png'
+        r4.src = './images/star(1).png'
+        r5.src = './images/star.png';
+
+    }
+
+    else {
+
+        r1.src = './images/star(1).png'
+        r2.src = './images/star(1).png'
+        r3.src = './images/star(1).png'
+        r4.src = './images/star(1).png'
+        r5.src = './images/star(1).png'
+    }
+
+    rating.innerText = "Rating is: "+n+"/5"
+            
+        
+    }
+}
