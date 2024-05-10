@@ -76,3 +76,51 @@
 #rating{
     padding: 10px;
 }
+
+.review{
+    display: flex;
+    flex-direction: row ;
+    align-items: center;
+    justify-content: center;
+    margin: 30px 0;
+    padding: 30px;
+    background-color: rgb(228, 220, 220);
+    
+    
+}
+
+.edu-cet{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+}
+
+.class-img{
+    height: 300px;
+}
+
+.class-img-opt{
+    height: 50px;
+    padding: 10px;cursor: pointer;
+}
+
+.img-container{
+
+   display: flex;
+   padding: 30px;
+   flex-direction: row;
+   align-items: center;
+   justify-content: center;
+    height: 10px;
+}
+
+p{
+    font-size: 20px;
+    padding:10px 50px;
+}
+
+.padding-20{
+    padding: 0 20px;
+}

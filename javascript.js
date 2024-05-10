@@ -87,3 +87,22 @@ function rating(n){
         
     }
 }
+
+function  changeImg(num){
+    const mainImg=document.getElementById('main-class-img');
+    if(num==1){
+        mainImg.src="./images/trading-class-img2.jpg";
+
+    }
+    else if(num==2){
+        mainImg.src="./images/trading-class-img3.jpg";
+    }
+    else if(num==3){
+        mainImg.src="./images/trading-class-img4.jpg";
+    }
+
+    else if(num==4){
+        mainImg.src="./images/trading-class-img.jpg";
+    }
+   
+}
