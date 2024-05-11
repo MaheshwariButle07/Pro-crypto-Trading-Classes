@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="./../style.css">
+  <link rel="stylesheet" href="./../css/register-from.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-sm bg-secondary-subtle NavBar">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><img src="./../images/logo.jpeg" alt="" class="logo"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="./../index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Contact us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="./our-course.html">Our Courses</a>
+              </li>
+              
+            </ul>
+            <div>
+              <img id="light-mode" onclick="LightMode()" class="LG-image" src="./../images/light-mode.png" alt="">
+              <img id="dark-mode" onclick="DarkMode()" class="LG-image" src="./../images/night-mode.png" alt="">
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      
+        <section class="container">
+            <h1>Registration Form</h1>
+            <div class="login">
+            <form class="form">
+                <labal for="name" class="Head1">Enter Full Name:</labal>
+                <input class="input" type="text" id="name" placeholder="Enter your Name" required/>
+                
+    
+                <labal for="email" class="Head1">Enter email:</labal>
+                <input class="input" type="email" id="email" placeholder="Enter email" required/>
+              
+                
+    
+                <labal for="no" class="Head1">Enter phone no:</labal>
+                <input class="input" type="text" id="no" placeholder="phone no" required/>
+               
+    
+                <labal for="password" class="Head1">Enter Password:</labal>
+                <input class="input" type="password" id="name" placeholder="Enter Password" required/>
+             
+    
+    
+                <labal for="region" class="Head1">Enter Your region:</labal>
+                <input class="input" type="text" id="region" placeholder="Enter your region" required/>
+              
+    
+
+                
+                <button id="signupBtn" onclick="signUp()">Submit</button>
+             </form>
+            </div> 
+            </div>
+        </section>
+    
+</body>
+</html>

@@ -124,3 +124,34 @@ p{
 .padding-20{
     padding: 0 20px;
 }
+
+.gift-card{
+    background-color: black;
+    margin: 30px;
+    padding: 10px 40px;
+    color: white;
+   display: flex;
+   justify-content:space-around;
+   align-items:center;
+}
+
+.c-name{
+    padding:0 150px;
+}
+
+.avilable-things{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+
+    
+}
+
+.avilable-item{
+display: flex;
+padding: 0 30px;
+justify-content: center;
+align-items: center;
+
+}
