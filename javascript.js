@@ -106,3 +106,93 @@ function  changeImg(num){
     }
    
 }
+
+
+alert("Welcome to my website Here you can learn stock Market Much More")
+
+function submitBtn(){
+    alert("Your response is been submited");
+
+    const mobNum = document.getElementById('num');
+
+    const mobileNumber = mobNum.value;
+      if(mobileNumber <= 10){
+         alert("Mobile Number Should contan at least 10 digit");
+         return;
+      }
+
+
+      const pass = document.getElementById('pw');
+
+      const password = pass.value;
+        if(password <= 8){
+           alert("password shoud contai atleast 8 digit");
+           return;
+        }
+    
+    
+}
+
+const registerNow = document.getElementById("register-btn");
+
+       
+registerNow.addEventListener("click", function () {
+   
+    window.location.href = "./register-form.html";
+
+});
+
+
+const LearnMore = document.getElementById("lm-btn");
+
+       
+LearnMore.addEventListener("click", function () {
+   
+    window.location.href = "./core-strategy.html";
+
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+const mobileNumber = ["1234567890","0987654321","0123456789"]
+
+function maskMobileNumber(mobile,i){
+    const funSplit = mobile.split('');
+
+    funSplit[2]="*";
+    funSplit[4]="*";
+    funSplit[6]="*";
+    funSplit[8]="*";
+    funSplit[10]="*";
+
+    return funSplit.join('');
+
+}
+
+const afterMask = mobileNumber.map(maskMobileNumber);
+console.log(afterMask);

@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="./../style.css">
   <link rel="stylesheet" href="./../css/register-from.css">
 </head>
-<body>
+<body id="body">
     <nav class="navbar navbar-expand-sm bg-secondary-subtle NavBar">
         <div class="container-fluid">
           <a class="navbar-brand" href="#"><img src="./../images/logo.jpeg" alt="" class="logo"></a>
@@ -56,11 +56,11 @@
                 
     
                 <labal for="no" class="Head1">Enter phone no:</labal>
-                <input class="input" type="text" id="no" placeholder="phone no" required/>
+                <input class="input" type="text" id="num" placeholder="phone no" required/>
                
     
                 <labal for="password" class="Head1">Enter Password:</labal>
-                <input class="input" type="password" id="name" placeholder="Enter Password" required/>
+                <input class="input" type="password" id="pw" placeholder="Enter Password" required/>
              
     
     
@@ -70,11 +70,17 @@
     
 
                 
-                <button id="signupBtn" onclick="signUp()">Submit</button>
+                <button id="signupBtn" onclick="submitBtn()">Submit</button>
              </form>
             </div> 
             </div>
         </section>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+      <script src="./../javascript.js"></script>
+      <script src="https://kit.fontawesome.com/14a1a7dd00.js" crossorigin="anonymous"></script>
     
 </body>
 </html>
