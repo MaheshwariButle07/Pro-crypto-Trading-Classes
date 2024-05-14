@@ -108,7 +108,7 @@ function  changeImg(num){
 }
 
 
-alert("Welcome to my website Here you can learn stock Market Much More")
+
 
 function submitBtn(){
     alert("Your response is been submited");
@@ -156,43 +156,125 @@ LearnMore.addEventListener("click", function () {
 
 
 
+let list = [];
 
+const ListFormLocalStorage = localStorage.getItem("list");
 
+if(ListFormLocalStorage)
+ {
+   list = JSON.parse(ListFormLocalStorage);
 
+   randerList();
+ }
 
+ function submiButton(){
+   const nameInput = document.getElementById("name");
+   const emailInput = document.getElementById("email");
+   const phoneInput = document.getElementById("phone");
+   const passwordInput = document.getElementById("pass");
 
+   list.push(nameInput.value);
+   list.push(emailInput.value);
+   list.push(phoneInput.value);
+   list.push(passwordInput.value);
 
+   localStorage.setItem("list", JSON.stringify(list));
+   nameInput.value=" ";
+   emailInput.value=" ";
+   phoneInput.value=" ";
+   passwordInput.value=" ";
 
+   randerList();
+ }
 
+ function randerList(){
+   const listItem = document.getElementById('list-items');
 
+   listItem.innerHTML = " ";
 
+   for(const item of list)
 
-
-
-
-
-
-
-
-
-
-
-
-
-const mobileNumber = ["1234567890","0987654321","0123456789"]
-
-function maskMobileNumber(mobile,i){
-    const funSplit = mobile.split('');
-
-    funSplit[2]="*";
-    funSplit[4]="*";
-    funSplit[6]="*";
-    funSplit[8]="*";
-    funSplit[10]="*";
-
-    return funSplit.join('');
-
+{
+   listItem.innerHTML += `<div id="list-items"> ${item} </div>`;
 }
+ }
+  
+ 
 
-const afterMask = mobileNumber.map(maskMobileNumber);
-console.log(afterMask);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// const mobileNumber = ["1234567890","0987654321","0123456789"]
+
+// function maskMobileNumber(mobile,i){
+//     const funSplit = mobile.split('');
+
+//     funSplit[2]="*";
+//     funSplit[4]="*";
+//     funSplit[6]="*";
+//     funSplit[8]="*";
+//     funSplit[10]="*";
+
+//     return funSplit.join('');
+
+// }
+
+// const afterMask = mobileNumber.map(maskMobileNumber);
+// console.log(afterMask);
